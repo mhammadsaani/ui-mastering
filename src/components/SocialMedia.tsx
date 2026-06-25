@@ -1,8 +1,8 @@
 import React from "react";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import { s, vs } from "react-native-size-matters";
-import WhatsApp from "../src/assets/WhatsApp";
-import SendIcon from "../src/assets/SendIcon";
+import WhatsApp from "../assets/WhatsApp";
+import SendIcon from "../assets/SendIcon";
 
 export default function SocialMedia({ leftIcon, text }) {
   const IconComponent = leftIcon;
