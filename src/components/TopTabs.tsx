@@ -9,24 +9,26 @@ const INACTIVE_COLOR = "#2C2016";
 const tabsArr = ["Live", "Recorded"];
 export default function TopTabs() {
   const [isActive, setActive] = useState("Live");
+
   return (
     <View style={styles.container}>
-      {tabsArr.map((tab) => (
-        <TouchableOpacity
-          onPress={() => setActive(tab)}
-          style={[
-            styles.tabButtons,
-            tab === isActive ? styles.activeButton : styles.inActiveButton,
-          ]}
-          key={tab}
-        >
-          <Text
-            style={[tab === isActive ? styles.activeText : styles.inActiveText]}
+      {tabsArr.map((tab) => {
+        const tabActive = tab === isActive;
+        return (
+          <TouchableOpacity
+            onPress={() => setActive(tab)}
+            style={[
+              styles.tabButtons,
+              tabActive ? styles.activeButton : styles.inActiveButton,
+            ]}
+            key={tab}
           >
-            {tab}
-          </Text>
-        </TouchableOpacity>
-      ))}
+            <Text style={[tabActive ? styles.activeText : styles.inActiveText]}>
+              {tab}
+            </Text>
+          </TouchableOpacity>
+        );
+      })}
     </View>
   );
 }
