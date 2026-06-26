@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: s(4),
     paddingVertical: vs(8),
+    marginBottom: vs(24),
   },
   tabButtons: {
     height: vs(32),
