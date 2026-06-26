@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import UserAvatar from "../src/components/UserAvatar";
 import BackButton from "../src/components/BackButton";
 import SocialMedia from "../src/components/SocialMedia";
@@ -12,18 +12,20 @@ import TikTok from "../src/assets/TikTok";
 export default function ContactUs() {
   return (
     <>
-      <View style={styles.header}>
-        <BackButton />
-        <UserAvatar />
-      </View>
-      <Text style={styles.contactUs}>Contact Us</Text>
-      <View style={styles.socialContainer}>
-        <Text style={styles.soicalText}>Social Media Platforms</Text>
-        <SocialMedia leftIcon={WhatsApp} text={"WhatsApp"} />
-        <SocialMedia leftIcon={Twitter} text={"Twitter"} />
-        <SocialMedia leftIcon={Instagram} text={"Instagram"} />
-        <SocialMedia leftIcon={SnapChat} text={"SnapChat"} />
-        <SocialMedia leftIcon={TikTok} text={"TikTok"} />
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <BackButton />
+          <UserAvatar />
+        </View>
+        <Text style={styles.contactUs}>Contact Us</Text>
+        <View style={styles.socialContainer}>
+          <Text style={styles.soicalText}>Social Media Platforms</Text>
+          <SocialMedia leftIcon={WhatsApp} text={"WhatsApp"} />
+          <SocialMedia leftIcon={Twitter} text={"Twitter"} />
+          <SocialMedia leftIcon={Instagram} text={"Instagram"} />
+          <SocialMedia leftIcon={SnapChat} text={"SnapChat"} />
+          <SocialMedia leftIcon={TikTok} text={"TikTok"} />
+        </View>
       </View>
     </>
   );
@@ -31,7 +33,6 @@ export default function ContactUs() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     paddingHorizontal: s(14),
   },
   header: {
