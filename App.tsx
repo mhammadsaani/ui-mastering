@@ -4,12 +4,13 @@ import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import ContactUs from "./src/screens/ContactUs";
 import MeditationScreen from "./src/screens/MeditationScreen";
 import { s, vs } from "react-native-size-matters";
+import PaymentScreen from "./src/screens/PaymentScreen";
 
 export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        <MeditationScreen />
+        <PaymentScreen />
       </SafeAreaView>
     </SafeAreaProvider>
   );
