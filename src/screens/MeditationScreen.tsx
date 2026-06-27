@@ -19,8 +19,11 @@ export default function MeditationScreen() {
           showsVerticalScrollIndicator={false}
           numColumns={2}
           columnWrapperStyle={{
-            marginBottom: vs(5),
             justifyContent: "space-between",
+            marginBottom: vs(4),
+          }}
+          contentContainerStyle={{
+            paddingBottom: vs(200),
           }}
         />
       </View>

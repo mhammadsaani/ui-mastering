@@ -13,10 +13,10 @@ export default function MeditationCard({ item }) {
         imageStyle={styles.image}
       >
         <View style={styles.overlay} />
-        <Text style={styles.topText}>Meditation</Text>
+        <Text style={styles.topText}>{title}</Text>
         <View style={styles.bottomContainer}>
           <VideIcon />
-          <Text style={styles.bottonText}>31st Jan - 09:00 am</Text>
+          <Text style={styles.bottonText}>{date}</Text>
         </View>
         <Text style={styles.liveText}>Live</Text>
       </ImageBackground>

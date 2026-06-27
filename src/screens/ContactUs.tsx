@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
-import UserAvatar from "../src/components/UserAvatar";
-import BackButton from "../src/components/BackButton";
-import SocialMedia from "../src/components/SocialMedia";
+import UserAvatar from "../components/UserAvatar";
+import BackButton from "../components/BackButton";
+import SocialMedia from "../components/SocialMedia";
 import { s, vs } from "react-native-size-matters";
-import WhatsApp from "../src/assets/WhatsApp";
-import Twitter from "../src/assets/Twitter";
-import Instagram from "../src/assets/Instagram";
-import SnapChat from "../src/assets/SnapChat";
-import TikTok from "../src/assets/TikTok";
+import WhatsApp from "../assets/WhatsApp";
+import Twitter from "../assets/Twitter";
+import Instagram from "../assets/Instagram";
+import SnapChat from "../assets/SnapChat";
+import TikTok from "../assets/TikTok";
 
 export default function ContactUs() {
   return (
