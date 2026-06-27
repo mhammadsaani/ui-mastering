@@ -12,13 +12,6 @@ export default function MeditationScreen() {
         <Text style={styles.mainText}>Meditations</Text>
         <Text style={styles.subText}>Lorem ipsum dolor sit amet,</Text>
         <TopTabs />
-        {/* <View style={styles.meditationCard}>
-          <MeditationCard />
-          <MeditationCard />
-          <MeditationCard />
-          <MeditationCard />
-          <MeditationCard />
-        </View> */}
         <FlatList
           data={dummyData}
           keyExtractor={(item) => item.id}
