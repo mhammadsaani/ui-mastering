@@ -4,7 +4,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   FlatList,
-  Button,
+  ScrollView,
 } from "react-native";
 import React, { use, useState } from "react";
 import { vs, s } from "react-native-size-matters";
@@ -28,7 +28,10 @@ const data = [
 export default function PaymentScreen() {
   const [isSelected, setSelected] = useState("");
   return (
-    <View style={styles.container}>
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      contentContainerStyle={styles.container}
+    >
       <View style={styles.subContainer}>
         <TouchableOpacity style={styles.backButton}>
           <FontAwesome5 name="less-than" size={12} color="#181C2E" />
@@ -70,13 +73,14 @@ export default function PaymentScreen() {
           PRESS AND PAY
         </Text>
       </TouchableOpacity>
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     padding: s(24),
+    paddingBottom: vs(50),
   },
   subContainer: {
     flexDirection: "row",
