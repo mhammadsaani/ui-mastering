@@ -4,6 +4,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   FlatList,
+  Button,
 } from "react-native";
 import React, { use, useState } from "react";
 import { vs, s } from "react-native-size-matters";
@@ -13,6 +14,9 @@ import CashIcon from "../assets/CashIcon";
 import PayPalIcon from "../assets/PayPalIcon";
 import VisaIcon from "../assets/VisaIcon";
 import MasterCardIcon from "../assets/MasterCardIcon";
+import AddMasterCard from "../components/AddMasterCard";
+import AddNewButton from "../components/AddNewButton";
+import PriceComponent from "../components/PriceComponent";
 
 const data = [
   { id: 1, label: "Cash", icon: <CashIcon /> },
@@ -46,8 +50,26 @@ export default function PaymentScreen() {
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{
           gap: vs(16),
+          paddingTop: vs(16),
         }}
       />
+      <AddMasterCard />
+      <AddNewButton />
+      <PriceComponent />
+      <TouchableOpacity>
+        <Text
+          style={{
+            textAlign: "center",
+            backgroundColor: "#FF7622",
+            color: "#fff",
+            paddingVertical: vs(20),
+            borderRadius: s(5),
+            fontWeight: "900",
+          }}
+        >
+          PRESS AND PAY
+        </Text>
+      </TouchableOpacity>
     </View>
   );
 }
