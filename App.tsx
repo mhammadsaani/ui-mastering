@@ -4,16 +4,16 @@ import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import ContactUs from "./src/screens/ContactUs";
 import MeditationScreen from "./src/screens/MeditationScreen";
 import { s, vs } from "react-native-size-matters";
-import PaymentScreen from "./src/screens/PaymentScreen";
+import GoldScreen from "./src/screens/GoldScreen";
+import TomatoScreen from "./src/screens/TomatoScreen";
+import PurpleScreen from "./src/screens/PurpleScreen";
+import Navigation from "./src/navigation/MainNavigation";
+import { NavigationContainer } from "@react-navigation/native";
+import { Link } from "@react-navigation/native";
+import { Button } from "@react-navigation/elements";
 
 export default function App() {
-  return (
-    <SafeAreaProvider>
-      <SafeAreaView style={styles.container}>
-        <PaymentScreen />
-      </SafeAreaView>
-    </SafeAreaProvider>
-  );
+  return <Navigation />;
 }
 
 const styles = StyleSheet.create({
