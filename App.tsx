@@ -11,9 +11,15 @@ import Navigation from "./src/navigation/MainNavigation";
 import { NavigationContainer } from "@react-navigation/native";
 import { Link } from "@react-navigation/native";
 import { Button } from "@react-navigation/elements";
+import MyTabs from "./src/navigation/BottomNavigation";
+import TabNavigation from "./src/navigation/BottomNavigation";
 
 export default function App() {
-  return <Navigation />;
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 }
 
 const styles = StyleSheet.create({

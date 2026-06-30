@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import TomatoScreen from "../screens/TomatoScreen";
 import PurpleScreen from "../screens/PurpleScreen";
 import GoldScreen from "../screens/GoldScreen";
+import MyTabs from "./BottomNavigation";
 
 const RootStack = createNativeStackNavigator({
   initialRouteName: "Tomato", // which screen to display first
@@ -20,6 +21,7 @@ const RootStack = createNativeStackNavigator({
     },
     Tomato: TomatoScreen,
     Gold: GoldScreen,
+    Tabs: MyTabs,
   },
 });
 
