@@ -4,7 +4,7 @@ import React from "react";
 const GoldScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>GoldScreen</Text>
+      <Text>Gold Screen</Text>
     </View>
   );
 };
